@@ -10,15 +10,14 @@
 |
 */
 use App\Http\Controllers\homeController;
-
+/*
 Route::get('/', function () {
     return view('welcome');//welcome.blade.php
-});
+});*/
 //Route::get('/', 'homeController@index');
-Route::get('about', function () {
-    $bitfumes=['This','is','Bitfumes'];
-    return view('about')->withBitfumes($bitfumes); // about.blade.php
-});
+Route::get("/", 'homeController@welcome');
+Route::get("about", 'homeController@about');
+Route::resource("songs", 'SongsController');
 
 /*Route::get('child', function () {
     $bitfumes=['This','is','Bitfumes'];
