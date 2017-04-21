@@ -1,5 +1,5 @@
 @extends("layout.app")
-@section('title','about')
+@section('title','About')
 @section('body')
     About
     @endsection
