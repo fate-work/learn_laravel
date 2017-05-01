@@ -1,5 +1,5 @@
 @extends('layout.app')
 @section('title','welcome')
 @section('body')
-    Welcome
+    Welcome {{$user->name}}
 @endsection
