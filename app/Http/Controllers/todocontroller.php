@@ -3,10 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use DB;
-use App\song;
 
-class SongsController extends Controller
+class todocontroller extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +13,7 @@ class SongsController extends Controller
      */
     public function index()
     {
-        $songs= song::all();
-        return view('songs.index',compact('songs'));
+        //
     }
 
     /**
@@ -57,9 +54,8 @@ class SongsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit(song $song)
+    public function edit($id)
     {
-        return view('songs.edit',compact('song'));
         //
     }
 
