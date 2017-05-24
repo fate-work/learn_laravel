@@ -10,7 +10,13 @@
             <fieldset>
                 <div class="form-group">
                     <div class="col-lg-10">
-                        <textarea class="form-control" name="body" rows="5" id="textArea"></textarea>
+                        <input type="text" name="title" placeholder="Title" class="form-control">
+                   <br>
+                  </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-lg-10">
+                        <textarea class="form-control" name="body" placeholder="Body" rows="5" id="textArea"></textarea>
                        <br>
                         <button type="submit" class="btn btn-success">Submit</button>
                     </div>
