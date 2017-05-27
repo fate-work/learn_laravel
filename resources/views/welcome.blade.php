@@ -2,5 +2,4 @@
 @section('title','welcome')
 @section('body')
     Welcome
-    @endforeach
 @endsection
