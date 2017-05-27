@@ -11,3 +11,6 @@
 */
 use App\Http\Controllers\homeController;
 Route::resource("todo","todocontroller");
+Route::get('/file',function (){
+    return view('file.home');
+});
