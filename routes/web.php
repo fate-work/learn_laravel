@@ -17,6 +17,5 @@ Route::get('/',function (){
 Route::get('/file',function (){
     return view('file.home');
 });
-Route::get('/about',function (){
-    return view('about');
-})->middleware("test");
+Route::get('about','testController@about')->middleware('test:olesya');
+Route::get('contact','testController@contact')->middleware('test:Alexander');
